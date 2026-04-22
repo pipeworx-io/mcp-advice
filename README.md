@@ -1,35 +1,57 @@
-# @pipeworx/mcp-advice
+# mcp-advice
 
-MCP server for the [Advice Slip API](https://api.adviceslip.com) — get random advice, search advice slips, and look up by ID. Free, no auth required.
+Advice MCP — wraps Advice Slip API (free, no auth)
+
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 250+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `random_advice` | Get a random piece of advice |
-| `search_advice` | Search for advice slips by keyword |
-| `get_advice` | Get a specific advice slip by ID |
+| `random_advice` | Get a random piece of advice. Returns the advice text and slip ID for reference or follow-up queries. |
+| `search_advice` | Search for advice by keyword or phrase (e.g., "confidence", "relationships"). Returns matching advice slips with text and IDs. |
+| `get_advice` | Get a specific advice slip by its numeric ID (e.g., "42"). Returns the full advice text. |
 
 ## Quick Start
 
-Add to your MCP client config:
+Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 
 ```json
 {
   "mcpServers": {
     "advice": {
-      "type": "url",
-      "url": "https://gateway.pipeworx.io/advice"
+      "url": "https://gateway.pipeworx.io/advice/mcp"
     }
   }
 }
 ```
 
-## CLI Usage
+Or connect to the full Pipeworx gateway for access to all 250+ data sources:
 
-```bash
-npx @anthropic-ai/mcp-client https://gateway.pipeworx.io/advice
+```json
+{
+  "mcpServers": {
+    "pipeworx": {
+      "url": "https://gateway.pipeworx.io/mcp"
+    }
+  }
+}
 ```
+
+## Using with ask_pipeworx
+
+Instead of calling tools directly, you can ask questions in plain English:
+
+```
+ask_pipeworx({ question: "your question about Advice data" })
+```
+
+The gateway picks the right tool and fills the arguments automatically.
+
+## More
+
+- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [pipeworx.io](https://pipeworx.io)
 
 ## License
 
