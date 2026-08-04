@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/pipeworx-io-mcp-advice-badge.png)](https://mseep.ai/app/pipeworx-io-mcp-advice)
+
 # mcp-advice
 
 Advice MCP — wraps Advice Slip API (free, no auth)
