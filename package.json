@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-advice",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Advice MCP — wraps Advice Slip API (free, no auth)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-76fc9c24843b4a2e6658766a09f3d8e10a95c6fd623ffabb81b923b3eb7df11d",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-b181e3e3384aa2d49f5da58d3a4015a7c0ccb0da13684d5134632eba518015e9",
+    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
   }
 }
