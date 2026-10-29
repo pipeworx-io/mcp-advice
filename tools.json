@@ -1,0 +1,42 @@
+[
+  {
+    "name": "random_advice",
+    "description": "Get a random piece of advice. Returns the advice text and slip ID for reference or follow-up queries.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "search_advice",
+    "description": "Search for advice by keyword or phrase (e.g., \"confidence\", \"relationships\"). Returns matching advice slips with text and IDs.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Keyword or phrase to search for within advice text."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_advice",
+    "description": "Get a specific advice slip by its numeric ID (e.g., \"42\"). Returns the full advice text.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number",
+          "description": "The numeric ID of the advice slip to retrieve."
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  }
+]
