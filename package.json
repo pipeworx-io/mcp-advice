@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-advice",
-  "version": "0.2.1",
-  "description": "Advice MCP — wraps Advice Slip API (free, no auth)",
+  "version": "0.2.2",
+  "description": "Unofficial Advice MCP — wraps Advice Slip API (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "advice",
     "gatewaySlug": "advice",
-    "sourceHash": "v1-c885b6f6a3309d8c733af595907784b8deb91978b75eee0b5dcc7201465f2941",
-    "sourceCommit": "aef970216f5309cdd22a27ddfc275e472aaadac1"
+    "sourceHash": "v1-9066366b7b838107da3e564a2c807af37c64271663694460d2cb9857a751a34a",
+    "sourceCommit": "874331b0c46b151f9264bd14840631427a7721c1"
   }
 }
